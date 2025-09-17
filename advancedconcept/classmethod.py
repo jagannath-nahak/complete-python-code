@@ -25,3 +25,5 @@ data="Alok-20"
 p1=Person.from_string(data)
 print(p1.name)
 print(p1.age)
+
+
