@@ -1,2 +1,2 @@
-def __eq__(self, value):
-    #     return self.mark==value
+ # def show(self):
+    #     print(f"The student {self.name} loves to play {self.game} and ,he is {self.age} years old")
