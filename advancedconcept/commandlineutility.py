@@ -22,4 +22,3 @@ elif args.operation=="div":
     print(f"the result is {args.num1/args.num2}")
 else:
     print("some error occured")
-    
