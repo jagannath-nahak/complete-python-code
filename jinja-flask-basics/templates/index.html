@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class xii-r.c.b bidya peetha</title>
+</head>
+<body>
+    <ul>
+        {% for key,value in marks.items() %}
+            <li>The marks of {{key}} is {{value}}
+            {% if value>80 %}
+            <span>Very Good!</span>
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    <j class="for"></j>
+</body>
+</html>
