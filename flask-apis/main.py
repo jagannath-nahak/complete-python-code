@@ -10,6 +10,6 @@ def json():
         "section":"20A",
     }
     values=[1,marks,24]
-    return jsonify(values)
+    return jsonify(marks)
 
 app.run(debug=True)

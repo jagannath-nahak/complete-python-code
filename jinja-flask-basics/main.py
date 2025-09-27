@@ -12,7 +12,8 @@ def home():
         "ranjan":80,
         "Biswa":100,
         "sitaram":95,
-        "sweta":84
+        "sweta":84,
+        "Sameer":99
     }  
     return render_template("index.html",marks=marks)
 
