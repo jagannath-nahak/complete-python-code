@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename="style.css") }}">
+</head>
+<body>
+    <div class="container">
+        <h1>List of items</h1>
+        <form action="/add" method="post">
+           <input type="text" name="item" placeholder="Enter your item">
+            <button type="Submit">Add</button>
+        </form>
+        <ul>
+           {% for item in items %}
+               <li>
+                  {{item | e}}
+                  <a href="/delete/{{loop.index0}}"><span>delete</span></a>
+               </li>
+               {%else%}
+               <p>no items yet!</p>
+           {% endfor %}
+
+
+        </ul>
+    </div>
+</body>
+</html>
